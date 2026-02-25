@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+
+</head>
+<body>
+  <main>
+   <h1>Student Admission Application Form</h1>
+   <form action="\submit" method="post">
+     <div>
+        <label for="student_id">Student Id</label>
+        <input type="text" id ="student_id" name="student_id" placeholder="Enter your Id" required minlength="10">
+     </div>
+
+
+     <div>
+        <label for="name">Full Name</label>
+        <input type="text" id ="name" name="name" placeholder="Enter your name" required>
+     </div>
+
+     <div>
+        <fieldset>
+         <div>
+              <label for="email_id">Email Id</label>
+              <input type="email" name="student_email"  id="email_id" placeholder="Enter Your email id" required>
+
+         </div>
+
+         <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password"minlength="8" required autocomplete="current-password">
+         </div>
+        </fieldset>
+     
+     </div>
+
+     <div>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" id="dob" name="dob" placeholder="dd/mm/yy" required>
+     </div>
+
+
+     <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+     </div>
+
+
+     <div>
+        <label for="profile">Profile Photo</label>
+        <input type="file" id="profile" name="profile">
+     </div>
+
+    <div id = "buttons">
+     <input type="submit" id ="submit" name="submit">
+     <input type="reset" id = "reset" name="reset">
+    </div>
+
+  </form>
+</main>
+</body>
+</html>
