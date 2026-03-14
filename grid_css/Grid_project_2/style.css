@@ -1,0 +1,21 @@
+body{
+    min-height:100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap:1rem;
+}
+
+body>*{
+    border:2px solid;
+}
+
+.main_content{
+    display: grid;
+    grid-template-columns: 2fr minmax(150px,1fr);
+    gap:1rem;
+}
+
+.main_content>*{
+    border:1px solid;
+}
